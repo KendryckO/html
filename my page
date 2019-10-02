@@ -7,14 +7,13 @@
 <style>
 body {font-family: Arial;}
 
-/* Style the tab */
+
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color:BLACK;
 }
 
-/* Style the buttons inside the tab */
 .tab button {
   background-color:GREY;
   float: left;
@@ -47,28 +46,31 @@ body {font-family: Arial;}
 
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">CONTACT</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">EMPLOYEE</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">STUDENTS</button>
- <button class="tablinks"   onclick="opencity(event, 'activities')">ACTIVITIES</BUTTON>
+  <button class="tablinks" onclick="openCity(event, 'D')">CONTACT</button>
+  <button class="tablinks" onclick="openCity(event, 'C')">EMPLOYEE</button>
+  <button class="tablinks" onclick="openCity(event, 'B')">STUDENTS</button>
+ <button  class="tablinks" onclick="opencity(event, 'A')">ACTIVITIES</BUTTON>
     
 </div>
 
-<div id="London" class="tabcontent">
+<div id="D" class="tabcontent">
   <h3>CONTACT </h3>
   <p>CONTACT ME AT: EXAMPLE@GMAIL.COM </p>
 </div>
 
-<div id="Paris" class="tabcontent">
+<div id="C" class="tabcontent">
   <h3>EMPLOYEE</h3>
   <p>SOMEONE</p> 
 </div>
 
-<div id="Tokyo" class="tabcontent">
+<div id="B" class="tabcontent">
   <h3>STUDENTS</h3>
   <p>PEOPLE</p>
 </div>
-
+<div id="A" class="tabcontent">
+    <h3>ACTIVITIES</h3>
+    <p>STUFF</p>
+</div>
 <script>
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
@@ -135,5 +137,6 @@ function openCity(evt, cityName) {
         <td>$180,000</td>
       </tr>
 </table>
+
    
 </body>
